@@ -1,19 +1,131 @@
-<hr style="margin: 60px 0; border: 0; border-top: 1px solid #eee;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supplementary Materials for Rebuttal-2</title>
+    <style>
+        /* 全局样式设定 */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #24292f;
+            background-color: #f6f8fa;
+            margin: 0;
+            padding: 40px 20px;
+        }
 
-        <div class="figure-box">
-            <h2>Robustness Across Different Simulators</h2>
-            <p class="description" style="font-size: 1.1em; margin-bottom: 20px;">
-                In the figure below, the left and right subfigures compare the results 
-                before and after changing the user simulator; 
-                <strong>the overall color density distribution remains highly consistent.</strong>
-            </p>
-            
-            <img src="3.png" alt="Simulator Comparison">
-            
-            <div class="caption">Figure 3: Original and modified results (ASR) for expanded evaluations across safety rubrics.</div>
-            <div class="description">
-                This visualization demonstrates that our experimental conclusions 
-                regarding model vulnerabilities are robust to changes in the user simulator 
-                and sample expansion.
-            </div>
-        </div>
+        /* 主容器：居中并限制宽度 */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(149, 157, 165, 0.2);
+        }
+
+        /* 标题样式 */
+        h1 {
+            border-bottom: 2px solid #eaecef;
+            padding-bottom: 10px;
+            font-size: 2.2em;
+            color: #0366d6;
+            text-align: center;
+        }
+
+        h2 {
+            margin-top: 50px;
+            font-size: 1.6em;
+            color: #24292f;
+            text-align: center;
+        }
+
+        /* 说明文字样式 */
+        .description {
+            color: #57606a;
+            font-size: 1.1em;
+            margin: 20px auto;
+            max-width: 850px;
+            text-align: center;
+        }
+
+        .highlight {
+            color: #d73a49;
+            font-weight: 600;
+        }
+
+        /* 图片展示区域：核心居中逻辑 */
+        .figure-box {
+            margin: 60px auto;
+            text-align: center; /* 内部元素水平居中 */
+        }
+
+        .figure-box img {
+            display: block;
+            margin: 25px auto; /* 图片自身居中 */
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #d0d7de;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        /* 鼠标悬停略微放大效果 */
+        .figure-box img:hover {
+            transform: scale(1.01);
+        }
+
+        /* 图片注释样式 */
+        .caption {
+            font-weight: 600;
+            font-size: 1.1em;
+            color: #24292f;
+            margin-top: 15px;
+        }
+
+        /* 分割线 */
+        hr {
+            height: 1px;
+            background-color: #d0d7de;
+            border: none;
+            margin: 60px 0;
+        }
+
+        /* 底部页脚 */
+        footer {
+            text-align: center;
+            margin-top: 80px;
+            color: #8c959f;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Supplementary Materials for Rebuttal-2</h1>
+
+
+    <div class="figure-box">
+        
+        <p class="description">
+            In the figure below, the left and right subfigures compare the results before and after expanding the evaluation so each cell has at least 20 samples.
+        </p>
+
+        <img src="3-2.png" alt="Heatmap Comparison of Original and Modified Results">
+
+        <div class="caption">Figure 3: ASR Comparison across original and modified results for expanded evaluations.</div>
+        <p class="description" style="font-size: 0.95em;">
+            This comparison demonstrates the stability of our safety evaluation metrics across different simulator configurations and sample sizes.
+        </p>
+    </div>
+
+    <hr>
+
+   
+</div>
+
+</body>
+</html>
